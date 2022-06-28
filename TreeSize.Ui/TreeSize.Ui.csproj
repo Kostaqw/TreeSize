@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net48</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <LangVersion>preview</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="ViewModel\img\file.png" />
+    <None Remove="ViewModel\img\folder.png" />
+    <None Remove="ViewModel\img\plus.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TreeSize.Servic\TreeSize.Service.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="ViewModel\img\file.png" />
+    <Resource Include="ViewModel\img\folder.png" />
+    <Resource Include="ViewModel\img\plus.png" />
+  </ItemGroup>
+
+</Project>
